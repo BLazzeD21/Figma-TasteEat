@@ -1,0 +1,203 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+html 
+    font-family: 'Roboto Condensed', sans-serif
+
+.container 
+    position: relative
+    margin: 0 auto
+    max-width: 1440px
+
+button
+    cursor: pointer
+
+
+@keyframes fadeTop
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+
+@keyframes showTop
+    from
+        top: -100%
+    to
+        top: 0
+
+@keyframes showLeft
+    from
+        left: -100%
+    to
+        left: 0
+
+@keyframes showRight
+    from
+        right: -100%
+    to
+        right: 0
+
+@keyframes showButton
+    from
+        button: -100%
+    to
+        button: 0
+
+@mixin showOnLoad
+    position: relative
+    animation-name: fadeTop
+    animation-duration: 5s
+
+@mixin showButton
+    position: relative
+    animation: showButton 2s
+    
+@mixin showOnTop
+    position: relative
+    animation: showTop 2s
+
+@mixin showOnLeft
+    position: relative
+    animation: showLeft 2s
+
+@mixin showOnRight
+    position: relative
+    animation: showRight 2s
+
+.header
+    background: #292E36
+    &_top
+        min-height: 287px
+        padding: 0px 40px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &-logo
+            @include showOnLoad
+            margin-top: 50px
+    &_menu
+        min-height: 82px
+    &_info
+        min-height: 810px
+        &-img
+            @include showOnRight
+            margin-top: 70px
+        
+        
+.row
+    height: 1px
+    width: 100%
+    background: #5C6168
+
+.call-btn
+    @include showOnTop
+    margin-top: 108px
+    height: 73px
+    width: 295px
+    border: 2px solid #E1B168
+    border-radius: 0px 
+    background: #292E36
+    font-size: 22px
+    font-weight: 400
+    text-align: center
+    letter-spacing: 1px
+    color: #FFFFFF
+    &:hover
+       background: #E1B168 
+       color: #292E36  
+
+
+.reservation-btn
+    @include showOnTop
+    margin-top: 108px
+    height: 73px
+    width: 295px
+    background: #E1B168
+    border: 2px solid #E1B168
+    font-size: 22px
+    font-weight: 400
+    line-height: 33px
+    text-align: center
+    letter-spacing: 1px
+    color: #292E36  
+    &:hover
+        border: 2px solid #E1B168
+        background: #292E36 
+        color: #FFFFFF
+
+.header_menu-row
+    padding-left: 41px
+    padding-right: 51px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.nav
+    width: 604px
+    &_menu
+        @include showOnLeft
+        margin-top: 26px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &-item a
+            text-decoration: none
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.2px
+            color: #FFFFFF
+            &:hover
+                color: #E1B168
+
+.icons_menu
+    @include showOnRight
+    margin-top: 28px
+    width: 160px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.welcome
+    @include showOnLeft
+    width: 610px
+    .orangeColor
+        color: #E1B168
+.header_info-row
+    padding-left: 40px
+    padding-right: 70px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .header_title
+        margin-top: 200px
+        font-size: 90px
+        line-height: 110px
+        letter-spacing: 0.2px
+        color: #FFFFFF
+    .header_text
+        margin-top: 20px
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.2px
+        color: #FFFFFF
+    .header_btn
+        margin-top: 35px
+        height: 73px
+        width: 230px
+        border: 2px solid #E1B168
+        border-radius: 0px
+        background: #292E36
+        font-size: 22px
+        line-height: 33px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #E1B168
+        &:hover
+            border: 2px solid #292E36
+            background: #E1B168
+            color: #292E36
+            
+
