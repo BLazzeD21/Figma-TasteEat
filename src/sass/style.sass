@@ -4,7 +4,7 @@
     padding: 0
 
 html 
-    font-family: 'Roboto Condensed', sans-serif
+    font-family: 'Raleway', sans-serif
 
 .container 
     position: relative
@@ -67,6 +67,7 @@ button
     position: relative
     animation: showRight 2s
 
+
 .header
     background: #292E36
     &_top
@@ -80,11 +81,17 @@ button
             margin-top: 50px
     &_menu
         min-height: 82px
+        &-row
+            padding-left: 41px
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
     &_info
         min-height: 810px
+        padding-left: 40px
         &-img
             @include showOnRight
-            margin-top: 70px
+            margin-top: 71px
         
         
 .row
@@ -128,12 +135,6 @@ button
         background: #292E36 
         color: #FFFFFF
 
-.header_menu-row
-    padding-left: 41px
-    padding-right: 51px
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
 
 .nav
     width: 604px
@@ -166,8 +167,6 @@ button
     .orangeColor
         color: #E1B168
 .header_info-row
-    padding-left: 40px
-    padding-right: 70px
     display: flex
     justify-content: space-between
     flex-wrap: wrap
@@ -200,4 +199,337 @@ button
             background: #E1B168
             color: #292E36
             
+.aboutUs
+    min-height: 243px
+    background: #FFF8F5
+    &_menu
+        padding-top: 100px
+        padding-left: 20px
+        padding-right: 20px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &-item
+            @include showOnTop
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+        &-info
+            margin-left: 20px
+    &_title
+        font-size: 30px
+        line-height: 39px
+        letter-spacing: 0.2px
+        color: #292E36
+    &_text
+        margin-top: 5px
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.2px
+        color: #555555
+
+.element-animation
+    opacity: 0
+    transform: translateY(30px)
+
+.element-animation.element-show 
+    opacity: 1
+    transition: all 1s
+    transform: translateY(0%)
+
+.img-animation
+    opacity: 0
+    transform: translateX(-300px)
+
+.img-animation.element-show 
+    opacity: 1
+    transition: all 2s
+    transform: translateX(0%)
+
+.right-animation
+    opacity: 0
+    transform: translateX(100px)
+
+.right-animation.element-show 
+    opacity: 1
+    transition: all 2s
+    transform: translateX(0%)
+
+.history
+    min-height: 728px
+    background: #FFF8F5
+    &-row
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        padding-top: 84px
+        padding-left: 40px
+        padding-right: 67px
+        &_info
+            width: 500px
+
+.history-row_info
+    .history_title
+        font-size: 40px
+        line-height: 56px
+        letter-spacing: 0.2px
+        color: #292E36
+    .history_text
+        margin-top: 15px
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.2px
+        color: #555555
+
+.history_date-row 
+    margin-top: 25px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .history_date
+        width: 247px
+        .date
+            font-size: 40px
+            line-height: 56px
+            letter-spacing: 0.2px
+            color: #292E36
+        .date_text
+            margin-top: 15px
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.2px
+            color: #555555
+
+.josefine
+    margin-top: 20px
+    font-size: 20px
+    line-height: 30px
+    letter-spacing: 0.2px
+    color: #555555
+    &_sign-img
+        margin-top: 21px
+    
+.menu
+    min-height: 1984px
+    background: #E5E5E5
+    &_name
+        width: 60px
+    &_title
+        margin-top: 12px
+        font-size: 40px
+        line-height: 56px
+        letter-spacing: 0.2px
+        text-transform: capitalize
+        color: #292E36
+    &_text
+        margin-top: 13px
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.2px
+        color: #555555
+    &_img
+        margin-top: 45px
+        
+    &_name-text
+        margin-top: 12px
+        text-align: center
+        margin-top: 4px
+        font-size: 15px
+        line-height: 22px
+        letter-spacing: 3px
+        text-transform: uppercase
+        color: #292E36
+    &-row
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        padding: 140px 40px 0 40px
+        &_info
+            width: 486px
+
+@mixin orangeLine
+    height: 1px
+    background: #E1B168
+
+.line
+    &_menu
+        @include orangeLine
+        width: 60px
+    &_reviews
+        @include orangeLine
+        width: 141px
+
+.menu_btn
+    margin-top: 60px
+    height: 73px
+    width: 295px
+    border: 2px solid #E1B168
+    border-radius: 0px 
+    background:#E5E5E5
+    font-size: 22px
+    line-height: 33px
+    text-align: center
+    letter-spacing: 0.2px
+    color: #E1B168
+    &:hover
+       background: #E1B168 
+       color: #292E36  
+
+.menu-row_menu
+    margin-top: 60px
+
+.title_menu-list
+    font-size: 36px
+    line-height: 50px
+    letter-spacing: 0.2px
+    color: #292E36
+
+.menu_item
+    margin-top: 40px
+    height: 84px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &-text
+        margin-right: 10px
+    &-img
+        margin-right: 20px
+    &-name
+        font-size: 30px
+        line-height: 42px
+        letter-spacing: 0.2px
+        color: #292E36
+    &-descr
+        line-height: 30px
+        letter-spacing: 0.2px
+        color: #555555
+    &-price
+        margin-top: 37px 
+        font-size: 30px
+        line-height: 42px
+        letter-spacing: 0.2px
+        color: #292E36
+
+.grey_line
+    margin-right: 10px
+    margin-top: 58px 
+    height: 2px
+    width: 150px
+    background: #AAAAAA
+
+.main_dish, .dessert
+    margin-top: 74px
+
+.reviews
+    min-height: 906px
+    background: #292E36
+    &_name
+        width: 141px
+    &_name-text
+        text-align: center
+        font-size: 15px
+        line-height: 22px
+        letter-spacing: 3px
+        text-transform: uppercase
+        color: #FFFFFF
+    &-box
+        padding: 140px 40px 70px 40px
+    &_title
+        margin-top: 12px
+        font-size: 40px
+        line-height: 56px
+        letter-spacing: 0.2px
+        text-transform: capitalize
+        color: #FFFFFF
+    &_text
+        width: 800px
+        margin-top: 8px
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.2px
+        color: #FFFFFF
+
+.slide
+    margin-right: 60px
+    width: 544px
+    min-height: 285px
+    background: #343942
+    padding: 0 40px 
+    .slide_header
+        display: flex
+        &-img
+            margin-top: 10px
+            margin-right: 30px
+        &-text
+            margin-top: 20px
+    &_name
+        font-size: 30px
+        line-height: 42px
+        letter-spacing: 0.2px
+        color: #FFFFFF
+    &_city  
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.2px
+        color: #E1B168 
+    &_line
+        margin-top: 30px
+        width: 100%
+        height: 1px
+        background: #797E89
+
+.review
+    margin-top: 30px
+    font-size: 18px
+    line-height: 38px
+    letter-spacing: 0.25px
+    color: #FFFFFF
+
+.slider
+    margin-left: 100px
+
+    
+.slider-list 
+    width: 1200px
+    min-height: 285px
+    overflow: hidden
+
+
+.slider-list.grab 
+  cursor: grab
+
+
+.slider-list.grabbing
+    cursor: grabbing
+
+
+.slider-track 
+    display: flex
+
+
+
+.slider-arrows
+    margin-top: 15px
+    margin-right: 200px
+    text-align: center
+
+
+.next, .prev 
+    color: white
+    background: none
+    border: none
+    margin: 0 10px
+    font-size: 30px
+    cursor: pointer
+
+
+.next.disabled, .prev.disabled 
+  opacity: .25
+  pointer-events: none
+
+.lamps
+    height: 600px
+    background: url(../img/lamps.png) center center/cover no-repeat
+    background-attachment: fixed
+
 
