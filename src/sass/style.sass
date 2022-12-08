@@ -135,6 +135,9 @@ button
         background: #292E36 
         color: #FFFFFF
 
+li 
+    list-style-type: none
+
 
 .nav
     width: 604px
@@ -152,20 +155,25 @@ button
             color: #FFFFFF
             &:hover
                 color: #E1B168
+.header_menu-row
+     .icons_menu
+        margin-top: 28px
+        @include showOnRight
 
 .icons_menu
-    @include showOnRight
-    margin-top: 28px
     width: 160px
     display: flex
+    align-items: center
     justify-content: space-between
     flex-wrap: wrap
 
 .welcome
     @include showOnLeft
     width: 610px
-    .orangeColor
-        color: #E1B168
+
+.orangeColor
+    color: #E1B168
+
 .header_info-row
     display: flex
     justify-content: space-between
@@ -514,8 +522,6 @@ button
 .slider-track 
     display: flex
 
-
-
 .slider-arrows
     margin-top: 15px
     margin-right: 200px
@@ -615,4 +621,94 @@ button
     line-height: 30px
     letter-spacing: 0.2px
     color: #555555
+
+.footer
+    min-height: 600px
+    background: #292E36
+    .footer_top
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        min-height: 188px
+        padding: 129px 40px 0 40px
+        .footer_sharp
+            width: 160px
+            font-size: 22px
+            line-height: 33px
+            letter-spacing: 0.2px
+            color: #FFFFFF
+
+    .footer_buttom
+        font-family: 'Gothic', sans-serif
+        margin-top: 25px
+        text-align: center
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.2px
+        color: #FFFFFF
+        
+    .mailing_title
+        font-family: 'Gothic', sans-serif
+        margin-top: 10px
+        font-size: 20px
+        line-height: 30px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #FFFFFF
+
+.footer_main
+    padding: 0 40px
+    margin-top: 25px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    .footer_main-btn
+        display: flex
+        height: 68px
+        .footer_input
+            background: #292E36
+            border: 1px solid #858585
+            color: #FFFFFF
+            padding-left: 25px
+            height: 68px
+            width: 456px
+        .footer_btn
+            width: 208px
+            height: 68px
+            background: #FFFFFF
+            border-radius: 0px
+            font-size: 22px
+            line-height: 33px
+            text-align: center
+            letter-spacing: 0.2px
+            color: #000000
+            border: none
+            &:hover
+                background: #292E36
+                color: white
+                border: 1px solid white
+    .footer_main-contacts
+        padding-left: 80px
+        width: 400px
+        .footer_address
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.2px
+            color: #FFFFFF
+        .footer_number, .footer_email
+            font-size: 19px
+            line-height: 30px
+            letter-spacing: 0.2px
+            color: #E1B168
+
+    .footer_main-hours
+        padding-right: 80px
+        width: 400px
+        .footer_hours
+            font-size: 20px
+            line-height: 30px
+            text-align: right
+            letter-spacing: 0.2px
+            color: #FFFFFF
 

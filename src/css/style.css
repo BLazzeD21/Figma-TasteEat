@@ -197,6 +197,10 @@ button {
   color: #FFFFFF;
 }
 
+li {
+  list-style-type: none;
+}
+
 .nav {
   width: 604px;
 }
@@ -225,15 +229,21 @@ button {
   color: #E1B168;
 }
 
-.icons_menu {
+.header_menu-row .icons_menu {
+  margin-top: 28px;
   position: relative;
   -webkit-animation: showRight 2s;
           animation: showRight 2s;
-  margin-top: 28px;
+}
+
+.icons_menu {
   width: 160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -247,7 +257,8 @@ button {
           animation: showLeft 2s;
   width: 610px;
 }
-.welcome .orangeColor {
+
+.orangeColor {
   color: #E1B168;
 }
 
@@ -837,4 +848,120 @@ button {
   line-height: 30px;
   letter-spacing: 0.2px;
   color: #555555;
+}
+
+.footer {
+  min-height: 600px;
+  background: #292E36;
+}
+.footer .footer_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 188px;
+  padding: 129px 40px 0 40px;
+}
+.footer .footer_top .footer_sharp {
+  width: 160px;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+.footer .footer_buttom {
+  font-family: "Gothic", sans-serif;
+  margin-top: 25px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+.footer .mailing_title {
+  font-family: "Gothic", sans-serif;
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+
+.footer_main {
+  padding: 0 40px;
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer_main .footer_main-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 68px;
+}
+.footer_main .footer_main-btn .footer_input {
+  background: #292E36;
+  border: 1px solid #858585;
+  color: #FFFFFF;
+  padding-left: 25px;
+  height: 68px;
+  width: 456px;
+}
+.footer_main .footer_main-btn .footer_btn {
+  width: 208px;
+  height: 68px;
+  background: #FFFFFF;
+  border-radius: 0px;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #000000;
+  border: none;
+}
+.footer_main .footer_main-btn .footer_btn:hover {
+  background: #292E36;
+  color: white;
+  border: 1px solid white;
+}
+.footer_main .footer_main-contacts {
+  padding-left: 80px;
+  width: 400px;
+}
+.footer_main .footer_main-contacts .footer_address {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+.footer_main .footer_main-contacts .footer_number, .footer_main .footer_main-contacts .footer_email {
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #E1B168;
+}
+.footer_main .footer_main-hours {
+  padding-right: 80px;
+  width: 400px;
+}
+.footer_main .footer_main-hours .footer_hours {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: right;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
