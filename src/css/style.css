@@ -127,7 +127,7 @@ button {
   min-height: 82px;
 }
 .header_menu-row {
-  padding-left: 41px;
+  padding: 0 41px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
