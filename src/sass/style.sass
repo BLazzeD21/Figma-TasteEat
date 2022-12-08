@@ -358,6 +358,15 @@ button
     &_reviews
         @include orangeLine
         width: 141px
+    &_news
+        @include orangeLine
+        width: 50px
+    &_delicious
+        @include orangeLine
+        width: 110px
+    &_date
+        @include orangeLine
+        width: 165px    
 
 .menu_btn
     margin-top: 60px
@@ -439,7 +448,6 @@ button
         font-size: 40px
         line-height: 56px
         letter-spacing: 0.2px
-        text-transform: capitalize
         color: #FFFFFF
     &_text
         width: 800px
@@ -532,4 +540,79 @@ button
     background: url(../img/lamps.png) center center/cover no-repeat
     background-attachment: fixed
 
+.news
+    min-height: 1214px
+    background: #E5E5E5
+    &_name
+        margin: 0 auto
+        width: 50px
+        &-text 
+            font-size: 15px
+            line-height: 22px
+            text-align: center
+            letter-spacing: 3px
+            text-transform: uppercase
+            color: #292E36
+
+    &_title
+        margin-top: 12px
+        font-size: 40px
+        line-height: 56px
+        text-align: center
+        letter-spacing: 0.2px
+        text-transform: capitalize
+        color: #292E36
+    &_descr
+        margin-top: 8px
+        font-size: 20px
+        line-height: 30px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #555555
+    &-row
+        margin-top: 40px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &_text
+            padding: 50px 47px 39px 46px
+            width: 640px
+            min-height: 336px
+    &-box
+        padding: 146px 55px 149px 55px
+    &-img
+        background: #000
+        opacity: 1
+    &-post
+        border: 1px solid #C4C4C4 
+
+.img_opacity
+
+.delicious_name
+    margin-right: 30px
+    width: 110px
+    &-text
+        font-family: 'Gothic', sans-serif
+        text-align: center
+        font-size: 15px
+        line-height: 22px
+        letter-spacing: 3px
+        text-transform: uppercase
+        color: #292E36
+.row-box
+    display: flex
+
+.new_title
+    margin-top: 27px
+    font-size: 30px
+    line-height: 39px
+    letter-spacing: 0.2px
+    color: #292E36
+
+.new_text
+    margin-top: 24px
+    font-size: 20px
+    line-height: 30px
+    letter-spacing: 0.2px
+    color: #555555
 

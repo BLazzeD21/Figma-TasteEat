@@ -517,6 +517,21 @@ button {
   background: #E1B168;
   width: 141px;
 }
+.line_news {
+  height: 1px;
+  background: #E1B168;
+  width: 50px;
+}
+.line_delicious {
+  height: 1px;
+  background: #E1B168;
+  width: 110px;
+}
+.line_date {
+  height: 1px;
+  background: #E1B168;
+  width: 165px;
+}
 
 .menu_btn {
   margin-top: 60px;
@@ -619,7 +634,6 @@ button {
   font-size: 40px;
   line-height: 56px;
   letter-spacing: 0.2px;
-  text-transform: capitalize;
   color: #FFFFFF;
 }
 .reviews_text {
@@ -727,4 +741,100 @@ button {
   height: 600px;
   background: url(../img/lamps.png) center center/cover no-repeat;
   background-attachment: fixed;
+}
+
+.news {
+  min-height: 1214px;
+  background: #E5E5E5;
+}
+.news_name {
+  margin: 0 auto;
+  width: 50px;
+}
+.news_name-text {
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #292E36;
+}
+.news_title {
+  margin-top: 12px;
+  font-size: 40px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+  color: #292E36;
+}
+.news_descr {
+  margin-top: 8px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #555555;
+}
+.news-row {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.news-row_text {
+  padding: 50px 47px 39px 46px;
+  width: 640px;
+  min-height: 336px;
+}
+.news-box {
+  padding: 146px 55px 149px 55px;
+}
+.news-img {
+  background: #000;
+  opacity: 1;
+}
+.news-post {
+  border: 1px solid #C4C4C4;
+}
+
+.delicious_name {
+  margin-right: 30px;
+  width: 110px;
+}
+.delicious_name-text {
+  font-family: "Gothic", sans-serif;
+  text-align: center;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #292E36;
+}
+
+.row-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.new_title {
+  margin-top: 27px;
+  font-size: 30px;
+  line-height: 39px;
+  letter-spacing: 0.2px;
+  color: #292E36;
+}
+
+.new_text {
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #555555;
 }/*# sourceMappingURL=style.css.map */
