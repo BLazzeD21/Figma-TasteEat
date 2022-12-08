@@ -5,6 +5,7 @@
 
 html 
     font-family: 'Raleway', sans-serif
+    scroll-behavior: smooth
 
 .container 
     position: relative
@@ -92,8 +93,7 @@ button
         &-img
             @include showOnRight
             margin-top: 71px
-        
-        
+             
 .row
     height: 1px
     width: 100%
@@ -115,7 +115,6 @@ button
     &:hover
        background: #E1B168 
        color: #292E36  
-
 
 .reservation-btn
     @include showOnTop
@@ -504,20 +503,16 @@ li
 .slider
     margin-left: 100px
 
-    
 .slider-list 
     width: 1200px
     min-height: 285px
     overflow: hidden
 
-
 .slider-list.grab 
   cursor: grab
 
-
 .slider-list.grabbing
     cursor: grabbing
-
 
 .slider-track 
     display: flex
@@ -527,7 +522,6 @@ li
     margin-right: 200px
     text-align: center
 
-
 .next, .prev 
     color: white
     background: none
@@ -535,7 +529,6 @@ li
     margin: 0 10px
     font-size: 30px
     cursor: pointer
-
 
 .next.disabled, .prev.disabled 
   opacity: .25
@@ -658,7 +651,6 @@ li
         color: #FFFFFF
 
 .footer_main
-    padding: 0 40px
     margin-top: 25px
     display: flex
     flex-wrap: wrap
@@ -689,8 +681,7 @@ li
                 color: white
                 border: 1px solid white
     .footer_main-contacts
-        padding-left: 80px
-        width: 400px
+        width: 350px
         .footer_address
             font-size: 20px
             line-height: 30px
@@ -703,8 +694,7 @@ li
             color: #E1B168
 
     .footer_main-hours
-        padding-right: 80px
-        width: 400px
+        width: 350px
         .footer_hours
             font-size: 20px
             line-height: 30px

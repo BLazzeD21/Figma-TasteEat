@@ -7,6 +7,7 @@
 
 html {
   font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -896,7 +897,6 @@ li {
 }
 
 .footer_main {
-  padding: 0 40px;
   margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -939,8 +939,7 @@ li {
   border: 1px solid white;
 }
 .footer_main .footer_main-contacts {
-  padding-left: 80px;
-  width: 400px;
+  width: 350px;
 }
 .footer_main .footer_main-contacts .footer_address {
   font-size: 20px;
@@ -955,8 +954,7 @@ li {
   color: #E1B168;
 }
 .footer_main .footer_main-hours {
-  padding-right: 80px;
-  width: 400px;
+  width: 350px;
 }
 .footer_main .footer_main-hours .footer_hours {
   font-size: 20px;
