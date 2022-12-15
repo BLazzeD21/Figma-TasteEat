@@ -165,7 +165,6 @@ button {
   border-radius: 0px;
   background: #292E36;
   font-size: 22px;
-  font-weight: 400;
   text-align: center;
   letter-spacing: 1px;
   color: #FFFFFF;
@@ -185,7 +184,6 @@ button {
   background: #E1B168;
   border: 2px solid #E1B168;
   font-size: 22px;
-  font-weight: 400;
   line-height: 33px;
   text-align: center;
   letter-spacing: 1px;
@@ -819,7 +817,7 @@ li {
   width: 110px;
 }
 .delicious_name-text {
-  font-family: "Gothic", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   text-align: center;
   font-size: 15px;
   line-height: 22px;
@@ -877,7 +875,7 @@ li {
   color: #FFFFFF;
 }
 .footer .footer_buttom {
-  font-family: "Gothic", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   margin-top: 25px;
   text-align: center;
   font-size: 20px;

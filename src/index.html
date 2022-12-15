@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Raleway&display=swap" rel="stylesheet"> -->
     <link type="image/x-icon" href="img/favicon/favicon.ico" rel="shortcut icon">
     <link type="Image/x-icon" href="img/favicon/favicon.ico" rel="icon">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>THE TASTEAT</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header_top">
                 <div class="header_top-call-btn">
@@ -25,7 +26,7 @@
                     </a>
                 </div>
                 <div class="header_top-logo">
-                    <a href="#" class="header_logo-link">
+                    <a href="#header" class="header_logo-link">
                         <img src="img/logo/Header_logo.svg" alt="TasteEat" class="header_top-img">
                     </a>
                 </div>
@@ -43,7 +44,7 @@
                 <div class="header_menu-row">
                     <nav class="nav">
                         <ul class="nav_menu">
-                            <li class="nav_menu-item"><a href="#">Главная</a></li>
+                            <li class="nav_menu-item"><a href="#header">Главная</a></li>
                             <li class="nav_menu-item"><a href="#info">О нас</a></li>
                             <li class="nav_menu-item"><a href="#menu">Наше меню</a></li>
                             <li class="nav_menu-item"><a href="#reviews">Отзывы</a></li>
@@ -459,7 +460,7 @@
             <div class="footer_top">
                 <div class="footer_sharp right-animation">#TheTastEat</div>
                 <div class="footer_top-logo">
-                    <a href="#">
+                    <a href="#header">
                         <img src="img/logo/Header_logo.svg" alt="footer" class="footer_top-img  element-animation">
                     </a>
                 </div>
@@ -507,7 +508,7 @@
         </div>
     </footer>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery-3.6.2.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/animation.js"></script>
 </body>
