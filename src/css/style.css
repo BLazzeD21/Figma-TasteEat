@@ -701,7 +701,7 @@ li {
 }
 
 .slider {
-  margin-left: 100px;
+  margin: 0 100px;
 }
 
 .slider-list {
@@ -728,7 +728,6 @@ li {
 
 .slider-arrows {
   margin-top: 15px;
-  margin-right: 200px;
   text-align: center;
 }
 
